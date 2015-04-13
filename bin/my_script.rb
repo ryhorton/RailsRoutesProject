@@ -44,7 +44,7 @@ url3 = Addressable::URI.new(
   scheme: 'http',
   host: 'localhost',
   port: 3000,
-  path: '/users/2.json',
+  path: '/contacts/1.json',
 ).to_s
 
 
@@ -67,12 +67,13 @@ end
 
 puts RestClient.get(url2)
 
-puts RestClient.patch(url2, {
-   user: {
-     username: 'gizmo'
-     }
+puts RestClient.patch(url3, {
+   contact: {
+     name: 'harris',
+     email: 'wwehfoije',
+     user_id: 13
    }
- )
+ })
 
 # puts RestClient.delete(url3)
 
