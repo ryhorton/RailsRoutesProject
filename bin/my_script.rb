@@ -69,7 +69,7 @@ puts RestClient.get(url2)
 
 puts RestClient.patch(url2, {
    user: {
-     name: "New Gizmo", email: "No Email"
+     username: 'gizmo'
      }
    }
  )

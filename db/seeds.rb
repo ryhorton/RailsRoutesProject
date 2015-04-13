@@ -7,5 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-User.create!(name: 'Harris', email: 'wjordan@bla.bla')
-User.create!(name: 'Robin', email: 'whatever@whatever.whatever')
+User.create!(username: 'Harris')
+User.create!(username: 'Robin')
+User.create!(username: 'Tony')
+User.create!(username: 'Abby')
