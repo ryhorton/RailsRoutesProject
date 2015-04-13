@@ -21,7 +21,7 @@ class Contact < ActiveRecord::Base
   has_many(
     :shared_users,
     through: :contact_shares,
-    source: :shared_to_user
+    source: :shared_user
   )
 
   validates :email, presence: true, uniqueness: { scope: :user_id }

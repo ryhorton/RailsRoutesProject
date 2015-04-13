@@ -13,7 +13,8 @@ class User < ActiveRecord::Base
     :contact_shares,
     class_name: "ContactShare",
     foreign_key: :user_id,
-    primary_key: :id
+    primary_key: :id,
+    dependent: :destroy
   )
 
   # set of contacts thare have been shared with a user

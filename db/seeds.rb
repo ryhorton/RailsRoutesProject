@@ -11,3 +11,5 @@ User.create!(username: 'Harris')
 User.create!(username: 'Robin')
 User.create!(username: 'Tony')
 User.create!(username: 'Abby')
+
+Contact.create!(name: 'har', email: 'sjosijf', user_id: '1')
